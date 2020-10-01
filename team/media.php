@@ -29,13 +29,11 @@
       <div class="col-md-12">
         <div class="panel panel-default">
           <div class="panel-heading clearfix">
-            <span class="glyphicon glyphicon-camera"></span>
-            <span>All Team Members</span>
             <div class="pull-right">
               <div class="form-group">
                 <div class="input-group">
                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+  Add new member
 </button>
 
                </div>
@@ -137,7 +135,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" name="submit" class="btn btn-default">Upload</button>
+          <button type="submit" name="submit" class="btn btn-default">Submit</button>
       </div>
           </form>
     </div>

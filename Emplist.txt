@@ -1,0 +1,35 @@
+Ramzan Shaikh 
+1000001
+
+Ashika Pera
+Fashion Designer
+1000013
+
+Imran Shaikh
+Businessman
+1000012
+
+Dinesh Rajpurohit
+Fashion Model
+1000015
+
+Arbaz Mirde
+Mechanical Engineer
+1000026
+
+Arfat Khamakar
+Businessman
+1000019
+
+Akash Pera
+Founder- WhatYouTech
+1000016
+
+Tushar Porji
+Tennis Cricket Player
+1000018
+
+
+Sohail Shaikh
+Businessman
+1000020

@@ -12,7 +12,7 @@ if(empty($errors)){
      $session->login($user_id);
     //Update Sign in time
      updateLastLogIn($user_id);
-     $session->msg("s", "Welcome to OSWA-INV.");
+     $session->msg("s", "Welcome to HopeMirror Team Portal");
      redirect('media.php',false);
 
   } else {

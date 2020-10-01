@@ -55,47 +55,41 @@ $result = $db->query($sql);
     <header>
       <div class="topbar ">
         <div class="socialbar">
-        <a href="#" class="socials"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="socials"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="socials"><i class="fa fa-whatsapp"></i></a>
-        <a href="#" class="socials"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.facebook.com/HopeMirrorFoundation/" class="socials"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/hopemirror_foundation/" class="socials"><i class="fa fa-instagram"></i></a>
+        <a href="https://wa.link/zohzk4" class="socials"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/channel/UCj8_i5IcaqIjsmn575qPDnw" class="socials"><i class="fa fa-youtube"></i></a>
       </div>
-
-      <div class="donate">
-        <button class="donate"> DONATE NOW </button>
+ <div class="donate">
+       <a href="../payment.html"> <button class="donate"> DONATE NOW </button></a>
       </div>
       </div>
-
         <div class="header-area ">
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
                     <div class="row align-items-center no-gutters">
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo-img">
-                                <a href="index.html">
+                                <a href="../index.html">
                                     <img src="../img/hopemirrorlogo.png" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-lg-8">
+                     <div class="col-xl-8 col-lg-8">
                             <div class="main-menu  d-none d-lg-block text-center">
-                                <nav>
+                               <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="../index.html">Home</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Our Team</a></li>
-                                        <li><a href="#">Gallery</a></li>
-                                        <li><a href="#">Media Coverage</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="../index.html">Home</a></li>
+                                        <li><a href="../about.html">About</a></li>
+                                        <li><a href="../our-team.html">Our Team</a></li>
+                                        <li><a href="../gallery.html">Gallery</a></li>
+                                        <li><a href="../media.html">Media Coverage</a></li>
+                                        <li><a href="../contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-lg-2 d-none d-lg-block">
-                            <div class="log_chat_area d-flex align-items-end">
-
-                            </div>
-                        </div>
+                      
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none">   </div>
                         </div>
@@ -105,23 +99,12 @@ $result = $db->query($sql);
         </div>
     </header>
     <!-- header-end -->
-  <div class="main-footer">
-     <center><div class="row">
-      <div class="btnb col-6">
-        <img src="https://image.flaticon.com/icons/svg/901/901120.svg">
-        <span>+91 8699 272829</span>
-
-      </div>
-
-      <div class="btnb col-6">
-        <img src="https://image.flaticon.com/icons/svg/855/855451.svg">
-        <span>info@hopemirror.org</span>
-
-
-      </div>
-  </div>
- </center>
-     </div>
+    <div class="buttons-top">
+                <a class="boxed-btn9 wow fadeInDown button-s "  data-wow-duration="1s" data-wow-delay=".2s" href="payment.html"><img src="https://www.flaticon.com/svg/static/icons/svg/590/590501.svg" width="20px"> Donate</a>
+                <a class="boxed-btn9 wow fadeInDown button-s "  data-wow-duration="1s" data-wow-delay=".2s" href="mailto:info@hopemirror.org"><img src="https://www.flaticon.com/svg/static/icons/svg/561/561127.svg" width="20px"> Email Us </a> 
+                <a class="boxed-btn9 wow fadeInDown button-s "  data-wow-duration="1s" data-wow-delay=".2s" href="tel:+91 8699 272829"><img src="https://www.flaticon.com/svg/static/icons/svg/597/597177.svg" width="20px"> Call us</a>
+            </div>
+ 
 <?
 if (mysqli_num_rows($result) > 0) 
 {
@@ -134,14 +117,15 @@ if (mysqli_num_rows($result) > 0)
                                // echo "<img src='uploads/products/".$row["file_name"]."' id='searchimg'>";
                                
                                 ?>
-     <section class="blog2_area section-padding m-2">
+     <section class="blog2_area section-padding m-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">
                     <div class="blog2_left_sidebar">
+                        <p style="font-size: 20px;"> We are proud to have <strong> <?php echo $row["name"]; ?></strong> as a member of Team HopeMirror. Thank you!</p>
                         <article class="blog2_item">
-                             <h1> <?php echo $row["id"]; ?>  </h1>
-                          <p> We are proud to have <?php echo $row["name"]; ?> as a member of Team HopeMirror. Thank you!</p>
+                            <br> <h2 style="text-align: center;"> HopeMirror ID- <?php echo $row["id"]; ?>  </h2>
+                          
                          
                               <div class="blog2_item_img">
                                <img class="card-img rounded-0" src="uploads/products/<?php echo $row["file_name"];?>"  alt="">
@@ -199,22 +183,22 @@ if (mysqli_num_rows($result) > 0)
 
                     <div class="col-xl-7 col-lg-7 col-md-9">
                         <div class="menu_links">
-                            <ul>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s" href="#">About</a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"></li>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s" href="#">Gallery</a></li>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".6s" href="#">Media</a></li>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".8s" href="#">Team</a></li>
-                                                          <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.1s" href="#">Contact</a></li>
-                            </ul>
+                        <ul>
+                            <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s" href="../about.html">About</a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"></li>
+                            <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s" href="../gallery.html">Gallery</a></li>
+                            <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".6s" href="../media.html">Media</a></li>
+                            <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".8s" href="../our-team.html">Team</a></li>
+                             <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.1s" href=".//contact.html">Contact</a></li>
+                        </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-12">
                         <div class="socail_links">
-                            <ul>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" href="#"> <i class="fa fa-instagram"></i> </a></li>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" href="#"> <i class="fa fa-google-plus"></i> </a></li>
+                        <ul>
+                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" href="https://www.facebook.com/HopeMirrorFoundation/"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" href="https://www.instagram.com/hopemirror_foundation/"> <i class="fa fa-instagram"></i> </a></li>
+                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" href="https://wa.link/zohzk4"> <i class="fa fa-whatsapp"></i> </a></li>
+                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" href="https://www.youtube.com/channel/UCj8_i5IcaqIjsmn575qPDnw"> <i class="fa fa-youtube"></i> </a></li>
                             </ul>
                         </div>
                     </div>
@@ -230,7 +214,7 @@ if (mysqli_num_rows($result) > 0)
                     <div class="col-xl-12 mb-90">
                         <p class="copy_right text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> HopeMirror Foundation  <br> Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by PenP!xxel
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> HopeMirror Foundation  <br> Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://instagram.com/penpixxel">PenPixel</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
